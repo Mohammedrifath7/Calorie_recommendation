@@ -157,7 +157,7 @@ if uploaded_file is not None:
         f.write(uploaded_file.getbuffer())
 
     # Display the uploaded image
-    st.image(uploaded_file, caption="Uploaded Image", use_column_width=True)
+    st.image(uploaded_file, caption="Uploaded Image", use_container_width=True)
 
     # Generate the image caption
     st.write("Generating a description for the dish...")
