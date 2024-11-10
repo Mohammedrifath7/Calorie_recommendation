@@ -145,11 +145,14 @@ st.markdown("""
     .box:hover {
         background-color: #f1f1f1;
     }
+    .title {
+        color: green;
+    }
     </style>
 """, unsafe_allow_html=True)
 
 # Streamlit UI
-st.title("AI-based Recipe Recommender")
+st.markdown("<h1 class='title'>GREENSWAP</h1>", unsafe_allow_html=True)
 st.header("Upload an Image of a Non-Vegetarian Dish")
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
