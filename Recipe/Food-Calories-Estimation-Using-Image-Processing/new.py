@@ -44,6 +44,8 @@ def recommend_vegetarian_dish(caption):
             messages=[{
                 "role": "user",
                 "content": f"Recommend a vegetarian dish with similar calorie content as the non-vegetarian dish described as '{caption}'."
+                "Recommend some famous tasty dishes,which is healthy and tasty"
+                "Give different dishes,in different places like Indian,Chinese,Italianetc ..Dont give same dish,for everytime"
                 "Definitely recommend a good vegeteraian dish,which is healthy and tasty"
                 "Recommend Dish and below that you can provide the description of the dish about calories and nutrictional function present in the dish,But initally display the dish name"
                 "give like points like colons for calories and nutrictional function present in the dish"
@@ -75,6 +77,7 @@ def get_recipe_details():
             messages=[{
                 "role": "user",
                 "content": "Provide the detailed recipe, ingredients, and cooking instructions for the recommended vegetarian dish."
+            
             }],
             model="llama3-8b-8192",
         )
